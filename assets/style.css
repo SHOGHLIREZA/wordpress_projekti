@@ -1,0 +1,254 @@
+/*
+Theme Name: Project Theme
+Theme URI: https://example.com/
+Author: REZA
+Author URI: https://example.com/
+Description: A simple WordPress theme with Portfolio custom post type and custom templates
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: project-theme
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-header {
+  background: #00695c;
+  color: #fff;
+  padding: 20px;
+}
+
+.site-header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.entry {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Hero Section (Homepage Header) */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 900px; /* عرض ثابت برای حالت Box */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* سایه زیبا */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background: #00c896;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #009f75;
+}
+
+.hero .btn-secondary {
+  background: #ffffff;
+  color: #00695c;
+  margin-left: 10px;
+}
+
+.hero .btn-secondary:hover {
+  background: #e0e0e0;
+  color: #004d40;
+}
+
+/* Skils styls**********************************/
+
+.skills {
+  background: #f0f0f0;
+  padding: 50px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00695c;
+}
+
+.skill-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.skill-bar {
+  background: #ddd;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: #00c896;
+  border-radius: 25px;
+  width: 0;
+  animation: fillBar 2s forwards;
+}
+
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: inherit; }
+}
+
+
+/* Navigation Menu */
+.site-header {
+  background: #00695c;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.site-title {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.site-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav .nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.main-nav .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav .nav a:hover {
+  color: #ffd54f;
+}
+/* style about me 
+
+/* About Me Page */
+.about-me {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about-me h1 {
+  text-align: center;
+  color: #00695c;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.about-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.about-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.about-post {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.about-post h3 a {
+  color: #00695c;
+  text-decoration: none;
+}
+
+.about-post h3 a:hover {
+  text-decoration: underline;
+}
+
